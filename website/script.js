@@ -26,13 +26,10 @@ function user_story_3(){
             random = Math.floor(Math.random()*data.length)
             console.log(data[random])
             document.getElementById("title").innerHTML = data[random].Titel
+            document.getElementById("title").setAttribute("href",data[random].Url)
             document.getElementById("province").innerHTML = data[random].Province
             document.getElementById("place").innerHTML = data[random].Place
             document.getElementById("description").innerHTML = data[random].Description
-            url = data[random].Url
-            document.getElementById("link").setAttribute("href",url)
-            document.getElementById("link").innerHTML = "weitere Infos"
-            
         });
 }
 
