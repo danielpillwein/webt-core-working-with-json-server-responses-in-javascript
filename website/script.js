@@ -27,8 +27,7 @@ function user_story_3(){
             console.log(data[random])
             document.getElementById("title").innerHTML = data[random].Titel
             document.getElementById("title").setAttribute("href",data[random].Url)
-            document.getElementById("province").innerHTML = data[random].Province
-            document.getElementById("place").innerHTML = data[random].Place
+            document.getElementById("place").innerHTML = (data[random].Place+", "+data[random].Province)
             document.getElementById("description").innerHTML = data[random].Description
         });
 }

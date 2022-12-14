@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-hidden bg-[#00b2ca]">
 <head>
     <meta charset="UTF-8">
     <title>WIFI Vienna</title>
     <link href="./tailwind.css" rel="stylesheet">
 </head>
-<body>
+<body class="h-screen flex justify-center">
     <script src="script.js"></script>
-    <br>
-    <a id="title"></a>
-    <div id="province"></div>
-    <div id="place"></div>
-    <div id="description"></div>
-    <button onclick="user_story_3()">Get random Career</button>
+    <div class="x:w-[960px] d:w-4/5 m:w-full mt-[1rem]">
+        <div class="bg-[#d9d9d9] rounded-md flex justify-between">
+            <div class="flex-column">
+                <a class="text-2xl text-[#00b2ca] hover:text-[#f08700] font-bold" id="title">Drück den Button</a>
+                <div class="text-[#4a4a4a]" id="place">HTL Rennweg, Wien</div>
+            </div>
+            <button class="font-bold pr-[10px] bg-[#f08700] rounded-md" onclick="user_story_3()">Get random Career</button>    
+        </div>
+        <div class="x:w-[960px] d:w-4/5 m:w-full d:h-screen x:h-screen mt-[0.5rem]">
+            <div class="border-0 rounded-lg bg-[#ffffff] overflow-auto d:h-[75%] x:h-[75%]" id="description">
+                Ohne Job keine Jobbeschreibung.
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
