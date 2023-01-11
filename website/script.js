@@ -11,12 +11,12 @@ async function user_story_1() {
 }
 
 function user_story_2(){
-    fetch("http://localhost/website/data/OpenJsonData_wifi.json")
+    fetch("http://localhost/data/OpenJsonData_wifi.json")
         .then(response => response.json())
         .then(data => console.log(data));
 }
 function user_story_3(){
-    fetch("http://localhost/website/data/OpenJsonData_wifi.json")
+    fetch("http://localhost/data/OpenJsonData_wifi.json")
         .then(response => response.json())
         .then(data => {
             random = Math.floor(Math.random()*data.length)
