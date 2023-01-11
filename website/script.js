@@ -16,11 +16,29 @@ function user_story_2(){
         .then(data => console.log(data));
 }
 function user_story_3(){
+    document.getElementById("job").innerHTML = ""
+    let loader = document.createElement("div")
+    loader.classList.add("loading")
+    document.getElementById("job").appendChild(loader)
+    
     fetch("http://localhost/data/OpenJsonData_wifi.json")
         .then(response => response.json())
         .then(data => {
+
+            let title = document.createElement("a")
+            let place = document.createElement("div")
+            let description = document.createElement("div")
+
+            title.id = "title"
+            place.id = "place"
+            description.id = "description"
+
+            document.getElementById("job").innerHTML = ""
+            document.getElementById("job").appendChild(title)
+            document.getElementById("job").appendChild(place)
+            document.getElementById("job").appendChild(description)
+
             random = Math.floor(Math.random()*data.length)
-            console.log(data[random])
             document.getElementById("title").innerHTML = data[random].Titel
             document.getElementById("title").setAttribute("href",data[random].Url)
             document.getElementById("place").innerHTML = (data[random].Place+", "+data[random].Province)
@@ -28,5 +46,5 @@ function user_story_3(){
         });
 }
 
-//user_story_2()
 //user_story_1()
+//user_story_2()
