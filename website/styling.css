@@ -1,13 +1,13 @@
-body{
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     background-color: #f2f2f2;
 }
 
-header{
+header {
     background-color: #004d6e;
     padding-top: 5vh;
     border-bottom: solid white;
@@ -19,12 +19,12 @@ header{
     width: 100%;
 }
 
-header > h1{
+header>h1 {
     color: #f2f2f2;
 }
 
-button{
-    width:fit-content;
+button {
+    width: fit-content;
     height: 3rem;
     font-size: 1.1rem;
     margin: 0 auto 1rem auto;
@@ -34,10 +34,10 @@ button{
     border-radius: 0.5rem;
     background-color: #ef233c;
     border: solid #d80032;
-    color:#f2f2f2;
+    color: #f2f2f2;
 }
 
-button:hover{
+button:hover {
     background-color: #d80032;
     border: solid #ef233c;
     cursor: pointer;
@@ -50,37 +50,53 @@ button:hover{
     border-top: 15px solid #009fe3;
     width: 50px;
     height: 50px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
     animation: spin 2s linear infinite;
-  }
-  
-  /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
 
-button > *{
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#error {
+    text-align: center;
+    color: #ef233c;
+}
+
+button>* {
     margin: auto 0 auto 0;
 }
 
-svg{
+svg {
     height: 2rem;
     fill: #f2f2f2;
 }
 
-#job-container{
+#job-container {
     width: 100%;
     height: 100%;
     overflow: auto;
 }
 
-#job{
+#job {
     padding-top: 2rem;
     width: 70%;
     height: 100%;
@@ -89,7 +105,7 @@ svg{
     height: 100%;
 }
 
-#job:not(:first-child()){
+#job:not(:first-child()) {
     text-align: left;
 }
 
@@ -100,33 +116,63 @@ svg{
     text-align: left;
 }
 
-#title:hover{
+#title:hover {
     color: #ef233c;
     text-decoration: underline;
 }
 
 #place {
-    margin:0.5rem 0 2rem 0;
+    margin: 0.5rem 0 2rem 0;
 }
 
 a {
     color: #009fe3;
 }
+
 a:hover {
     color: #ef233c;
 }
 
-@media screen and (max-width: 600px) {
-    header{
-        padding-top: 1vh;
-        background-color: rebeccapurple;
+@media (orientation: portrait) {
+    header {
+        padding-top: 0;
+        font-size: 2rem;
     }
-   }
 
-@media screen and (min-width: 1024px) {
-    #job-container{
-       width: 1024px;
-       margin: 0 auto 0 auto;
-    }   
-   }
-   
+    button {
+        height: 6rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        width: 50vw;
+        justify-content: space-between;
+    }
+
+    svg {
+        height: 3rem;
+    }
+
+    #job {
+        font-size: 2.3rem;
+    }
+
+    #title {
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+
+    .loading {
+        margin: 10vh auto auto auto;
+        border: 2vw solid #c6c6c6;
+        border-radius: 50%;
+        border-top: 2vw solid #009fe3;
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    #job-container {
+        width: 1024px;
+        margin: 0 auto 0 auto;
+    }
+}
