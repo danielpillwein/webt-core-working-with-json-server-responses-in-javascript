@@ -1,4 +1,4 @@
-async function user_story_1() {
+function user_story_1() {
     fetch("https://jsonplaceholder.typicode.com/todos/1")
         .then(response => response.json())
         .then(data => {

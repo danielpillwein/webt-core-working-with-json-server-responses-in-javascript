@@ -105,10 +105,6 @@ svg {
     height: 100%;
 }
 
-#job:not(:first-child()) {
-    text-align: left;
-}
-
 #title {
     font-size: 25pt;
     color: black;
