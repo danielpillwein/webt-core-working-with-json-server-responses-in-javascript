@@ -4,24 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>server responses in js</title>
-    <link href="./styling.css" rel="stylesheet">
+    <!--<link href="./styling.css" rel="stylesheet">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="container-fluid p-0">
     <script src="script.js"></script>
-    <header>
-        <h1>Finden Sie Ihren Traumjob!</h1>
-        <button onclick="user_story_3()">
-            <div>Job suchen</div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+    <header class="container-fluid bg-info text-white">
+        <h2 class="row justify-content-center pt-5">Finden Sie Ihren Traumjob!</h2>
+        <button onclick="user_story_3()" class="btn-danger row m-auto border border-danger rounded-pill">
+            <h5 class="col-sm m-auto ">Job suchen</h5>
+            <svg class="col-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path
                     d="M15 35.5q1.05 0 1.775-.725.725-.725.725-1.775 0-1.05-.725-1.775Q16.05 30.5 15 30.5q-1.05 0-1.775.725Q12.5 31.95 12.5 33q0 1.05.725 1.775.725.725 1.775.725Zm0-18q1.05 0 1.775-.725.725-.725.725-1.775 0-1.05-.725-1.775Q16.05 12.5 15 12.5q-1.05 0-1.775.725Q12.5 13.95 12.5 15q0 1.05.725 1.775.725.725 1.775.725Zm9 9q1.05 0 1.775-.725.725-.725.725-1.775 0-1.05-.725-1.775Q25.05 21.5 24 21.5q-1.05 0-1.775.725Q21.5 22.95 21.5 24q0 1.05.725 1.775.725.725 1.775.725Zm9 9q1.05 0 1.775-.725.725-.725.725-1.775 0-1.05-.725-1.775Q34.05 30.5 33 30.5q-1.05 0-1.775.725Q30.5 31.95 30.5 33q0 1.05.725 1.775.725.725 1.775.725Zm0-18q1.05 0 1.775-.725.725-.725.725-1.775 0-1.05-.725-1.775Q34.05 12.5 33 12.5q-1.05 0-1.775.725Q30.5 13.95 30.5 15q0 1.05.725 1.775.725.725 1.775.725ZM9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h30q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h30V9H9v30ZM9 9v30V9Z" />
             </svg>
         </button>
     </header>
-    <div id="job-container">
+    <div id="job-container" class="row">
         <div id="job"></div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
