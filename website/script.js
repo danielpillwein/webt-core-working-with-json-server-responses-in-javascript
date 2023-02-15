@@ -33,22 +33,29 @@ function user_story_3() {
             place.id = "place"
             description.id = "description"
 
+            title.className ="h4 text-danger"
+            place.className =""
+            description.className ="mt-3"
+            
             document.getElementById("job").innerHTML = ""
             document.getElementById("job").appendChild(title)
             document.getElementById("job").appendChild(place)
             document.getElementById("job").appendChild(description)
-
+            
+           console.log(document.getElementById("job"))
             random = Math.floor(Math.random() * data.length)
+            
             document.getElementById("title").innerHTML = data[random].Titel
             document.getElementById("title").setAttribute("href", data[random].Url)
             document.getElementById("place").innerHTML = (data[random].Place + ", " + data[random].Province)
             document.getElementById("description").innerHTML = data[random].Description
         })
         .catch(er => {
+            console.log(er)
             document.getElementById("job").innerHTML = ""
             let error = document.createElement("div")
             error.id = "error"
-            error.innerHTML = "Leider ist ein Fehler aufgetreten. Bitte laden Sie die Seite neu!"
+            error.innerHTML = "Leider ist ein Fehler aufgetreten. Versuchen Sie es bitte erneut!"
             document.getElementById("job").appendChild(error)
         });
 }
